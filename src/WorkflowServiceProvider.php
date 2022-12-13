@@ -21,8 +21,8 @@ class WorkflowServiceProvider extends ServiceProvider
         $configPath = $this->configPath();
 
         $this->publishes([
-            "${configPath}/workflow.php" => $this->publishPath('workflow.php'),
-            "${configPath}/workflow_registry.php" => $this->publishPath('workflow_registry.php'),
+            "{$configPath}/workflow.php" => $this->publishPath('workflow.php'),
+            "{$configPath}/workflow_registry.php" => $this->publishPath('workflow_registry.php'),
         ], 'config');
     }
 

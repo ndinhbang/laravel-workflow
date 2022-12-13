@@ -61,11 +61,11 @@ class WorkflowDumpCommand extends Command
         }
 
         if (! isset($config[$workflowName])) {
-            throw new Exception("Workflow ${workflowName} is not configured.");
+            throw new Exception("Workflow {$workflowName} is not configured.");
         }
 
         if (false === array_search($class, $config[$workflowName]['supports'])) {
-            throw new Exception("Workflow ${workflowName} has no support for class ${class}." .
+            throw new Exception("Workflow {$workflowName} has no support for class {$class}." .
                 ' Please specify a valid support class with the --class option.');
         }
 
@@ -79,7 +79,7 @@ class WorkflowDumpCommand extends Command
             $dumper = new StateMachineGraphvizDumper();
         }
 
-        $dotCommand = ['dot', "-T${format}", '-o', "${workflowName}.${format}"];
+        $dotCommand = ['dot', "-T{$format}", '-o', "{$workflowName}.{$format}"];
 
         $process = new Process($dotCommand);
         $process->setWorkingDirectory($path);

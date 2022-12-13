@@ -181,7 +181,7 @@ class WorkflowEventsTest extends BaseWorkflowTestCase
         ];
 
         foreach ($events as $key => $event) {
-            yield "silences ${event}" => [[$event], [$key]];
+            yield "silences {$event}" => [[$event], [$key]];
         }
     }
 
