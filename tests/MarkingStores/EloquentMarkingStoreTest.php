@@ -19,6 +19,7 @@ class EloquentMarkingStoreTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider providesSubjects
      *
      * @param mixed $subject
@@ -50,6 +51,7 @@ class EloquentMarkingStoreTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider providesSubjects
      *
      * @param mixed $subject
@@ -73,6 +75,7 @@ class EloquentMarkingStoreTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider providesTypeSafeScenarios
      *
      * @param mixed $markingValue

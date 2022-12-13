@@ -30,6 +30,7 @@ class DispatchAdapterTest extends TestCase
 
     /**
      * @test
+     *
      * @dataProvider providesEventScenarios
      *
      * @param mixed $expectedEvent

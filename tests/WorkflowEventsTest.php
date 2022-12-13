@@ -121,6 +121,7 @@ class WorkflowEventsTest extends BaseWorkflowTestCase
 
     /**
      * @test
+     *
      * @dataProvider providesEventsToDispatchScenarios
      */
     public function testIfWorkflowOnlyEmitsSpecificEvents(?array $eventsToDispatch, array $eventsToExpect)

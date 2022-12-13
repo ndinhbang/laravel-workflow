@@ -361,6 +361,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
 
     /**
      * @test
+     *
      * @dataProvider providesAutomaticMarkingStoreScenarios
      */
     public function testIfMarkingStoreIsAutomatic(array $typeConfig, bool $expectSingleState)
