@@ -4,7 +4,7 @@
     "keywords": ["workflow", "symfony", "laravel", "laravel7", "laravel8"],
     "license": "MIT",
     "require": {
-        "php": "^7.4|^8.0|^8.1",
+        "php": "^7.4|^8.0|^8.1|^8.2",
         "symfony/workflow": "^6.0",
         "symfony/process": "^6.0",
         "symfony/event-dispatcher-contracts": "^2.4|^3.0",
