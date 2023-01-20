@@ -222,7 +222,7 @@ class WorkflowRegistry
      *
      * @return bool
      */
-    protected function isLoaded($workflowName, $supportStrategy)
+    public function isLoaded($workflowName, $supportStrategy)
     {
         if (! $this->registryConfig['track_loaded']) {
             return false;
