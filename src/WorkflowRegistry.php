@@ -187,32 +187,6 @@ class WorkflowRegistry
     }
 
     /**
-     * Parses events to dispatch data from config
-     */
-    protected function parseEventsToDispatch(array $workflowData)
-    {
-        if (array_key_exists('events_to_dispatch', $workflowData)) {
-            return $workflowData['events_to_dispatch'];
-        }
-
-        // Null dispatches all, [] dispatches none.
-        return null;
-    }
-
-    /**
-     * Gets the default registry config
-     *
-     * @return array
-     */
-    protected function getDefaultRegistryConfig()
-    {
-        return [
-            'track_loaded' => false,
-            'ignore_duplicates' => true,
-        ];
-    }
-
-    /**
      * Checks if the workflow is already loaded for this supported class
      *
      * @param string $workflowName
@@ -237,6 +211,32 @@ class WorkflowRegistry
         }
 
         return false;
+    }
+
+    /**
+     * Parses events to dispatch data from config
+     */
+    protected function parseEventsToDispatch(array $workflowData)
+    {
+        if (array_key_exists('events_to_dispatch', $workflowData)) {
+            return $workflowData['events_to_dispatch'];
+        }
+
+        // Null dispatches all, [] dispatches none.
+        return null;
+    }
+
+    /**
+     * Gets the default registry config
+     *
+     * @return array
+     */
+    protected function getDefaultRegistryConfig()
+    {
+        return [
+            'track_loaded' => false,
+            'ignore_duplicates' => true,
+        ];
     }
 
     /**
