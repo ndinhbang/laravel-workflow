@@ -67,4 +67,14 @@ class EloquentMarkingStore implements MarkingStoreInterface
         // If the mutator doesn't exist, defer to Eloquent for setting/casting/etc
         $subject->{$this->property} = $marking;
     }
+
+    /**
+     * Return the property name of the marking
+     *
+     * @return mixed
+     */
+    public function getProperty()
+    {
+        return $this->property;
+    }
 }
