@@ -5,6 +5,8 @@ namespace ZeroDaHero\LaravelWorkflow\Events;
 use Symfony\Component\Workflow\Marking;
 use Symfony\Component\Workflow\Transition;
 use Symfony\Component\Workflow\Event\Event;
+use Symfony\Component\Workflow\TransitionBlocker;
+use Symfony\Component\Workflow\TransitionBlockerList;
 use Symfony\Component\Workflow\WorkflowInterface;
 use Symfony\Component\Workflow\Event\GuardEvent as SymfonyGuardEvent;
 
